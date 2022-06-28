@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url( '{{ url_for('static', filename = 'assets/img/home-bg.jpg') }}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>{{params['indx_hme_head']}}</h1>
+                            <span class="subheading">A Blog which is liked by the Programmer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <h2 class="text-center">Go To Dashboard</h2>
+                    <center><a href="/dashboard"><button class="btn btn-secondary">Dashboard</button></a></center>
+                   <hr>
+                   
+                    <!-- Post preview-->
+
+                    {% for post in posts %}
+                    <div class="post-preview justify-content-center">
+                        <a href="/post/{{post.slug}}">
+                            <h3 class="post-title center">{{post.title}}</h3>
+                            <h4 class="post-subtitle">{{post.sub_heading}}</h4>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Admin</a>
+                            on {{post.date}}
+                        </p>
+                    </div>
+
+                    {{post.content[0:25]}} ...
+
+                    <!-- Divider-->
+                    <hr class="my-4" />
+
+                </li></a>
+                {% endfor %}
+
+                   
+
+                    <!-- Pager-->
+                    <div class="clearfix">
+
+                       <center><a class="btn btn-primary float-right text-uppercase" href="{{prev}}">&larr; Previous</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a class="btn btn-primary float-left text-uppercase" href="{{next}}">Next →</a></center>
+                        <hr>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+{% block body %}
+
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url( '{{ url_for('static', filename = 'assets/img/coder10.jpg') }}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Admin Panel</h1>
+                            <span class="subheading">Manage & Change Blog Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+                    <h2>Go To Dashboard</h2>
+                    <a href="/dashboard"><button class="btn btn-secondary">Dashboard</button></a>
+                   <hr>
+                    <h1 align="center">Add/Edit Posts</h1>
+                    <hr>
+
+                   
+                <form id="editForm" action="/edit/{{post.sno}}" method="post" data-sb-form-api-token="API_TOKEN" novalidate>
+                  <!-- Title input -->
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="title">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Enter your title name" class="form-control" data-sb-validations="required" value="{{post.title}}" />
+                    <div class="invalid-feedback" data-sb-feedback="name:required">A title is required.</div>
+                  </div>
+
+                  <!-- Sub_heading input -->
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="sub_heading">Sub Heading</label>
+                    <input type="text" id="sub_heading" name="sub_heading" placeholder="Enter Sub-Heading" class="form-control" data-sb-validations="required" value="{{post.sub_heading}}" />
+                  </div>
+
+                  <!-- Slug input -->
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="slug">Slug</label>
+                    <input type="text" class="form-control" id="slug" name="slug" placeholder="Enter Slug" data-sb-validations="required" value="{{post.slug}}"></input>
+                  </div>
+
+                  <!-- Content input -->
+                 <div class="form-outline mb-4">
+                    <label class="form-label" for="content">Content</label>
+                    <textarea rows="5" class="form-control" id="content" name="content" placeholder="Enter Content" data-sb-validations="required" >{{post.content}}</textarea>
+                  </div>
+
+                  <!--Image input-->
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="img_file">Image File</label>
+                    <input type="text" class="form-control" id="img_file" name="img_file" placeholder="Enter image name" data-sb-validations="required" value="{{post.img_file}}"></input>
+                  </div>
+
+                  <!-- Submit button -->
+                 <button class="btn btn-primary" id="submitButton" type="submit">SUBMIT</button>
+                </form>
+
+                 </div>
+            </div>
+        </div>
+{% endblock %}
