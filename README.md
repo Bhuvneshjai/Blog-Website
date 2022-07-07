@@ -1,5 +1,5 @@
 # MafiaTech-Coding-Blog Website
-This is a blog website which is made by Python - Flask. In this website there are login page , home page , about page , dashboard page , edit page and contact page. It is used to see the posts and for read the articles. Admin  control the posts by apply some basic function like Add , Delete , Edit posts and we can also upload the files by file uploader option.
+This is a blog website which is made by Python framework (Flask). In this website there are login page , home page , about page , dashboard page , edit page and contact page. It is used to see the posts and to read the articles. Admin  control the posts by apply some basic function like Add , Delete , Edit posts and we can also upload the files by file uploader option.
 
 # Log-in Page
 ![login_page](https://user-images.githubusercontent.com/82877515/176126751-2a4006fe-9e42-4c01-99b0-c531a96ae1c7.png)
