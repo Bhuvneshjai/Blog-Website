@@ -32,3 +32,5 @@ This is a blog website which is made by Python framework (Flask). In this websit
 ![contact](https://user-images.githubusercontent.com/82877515/176127752-c3bac547-9c76-4d36-b4b0-ce4e542c68a3.png)
 ![contact_1](https://user-images.githubusercontent.com/82877515/176127711-fb1443fe-35c6-4af5-8500-a02341e3a38b.png)
 ![contact_2](https://user-images.githubusercontent.com/82877515/176127722-1a439bab-0035-42a5-96b7-02eadf564076.png)
+
+### Localhost URL : http://127.0.0.1:5000/
