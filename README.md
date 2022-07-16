@@ -34,3 +34,4 @@ This is a blog website which is made by Python framework (Flask). In this websit
 ![contact_2](https://user-images.githubusercontent.com/82877515/176127722-1a439bab-0035-42a5-96b7-02eadf564076.png)
 
 ### Localhost URL : http://127.0.0.1:5000/
+
