@@ -11,7 +11,7 @@ This is a blog website which is made by Python framework (Flask). In this websit
 * Add post: allows administrators to create new posts with a title, content, and possibly other metadata
 * Edit post: allows administrators to update the content, title, or other details of an existing post
 * Delete post: allows administrators to remove a post from the website entirely
-** Overall, it seems like the website is a content management system that allows authorized users to manage the posts on the site. The technologies used, Python Flask and Xampp Server, provide the necessary infrastructure for building and deploying web applications, while the Pycharm IDE likely made development and testing of the code more streamlined.
+##### --- Overall, it seems like the website is a content management system that allows authorized users to manage the posts on the site. The technologies used, Python Flask and Xampp Server, provide the necessary infrastructure for building and deploying web applications, while the Pycharm IDE likely made development and testing of the code more streamlined.
 
 # Log-in Page
 ![login_page](https://user-images.githubusercontent.com/82877515/176126751-2a4006fe-9e42-4c01-99b0-c531a96ae1c7.png)
