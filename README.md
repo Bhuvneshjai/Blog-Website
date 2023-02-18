@@ -2,7 +2,7 @@
 This is a blog website which is made by Python framework (Flask). In this website there are login page , home page , about page , dashboard page , edit page and contact page. It is used to see the posts and to read the articles. Admin  control the posts by apply some basic function like Add , Delete , Edit posts and we can also upload the files by file uploader option.
 
 ### Technologies used:
----> Python Flask: a lightweight web framework for Python
+* Python Flask: a lightweight web framework for Python
 ---> Pycharm IDE: an integrated development environment for Python
 ---> Xampp Server: a cross-platform web server solution that includes Apache, MySQL, PHP, and Perl
 ### Features of the website:
