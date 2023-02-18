@@ -1,6 +1,18 @@
 # Blog Website
 This is a blog website which is made by Python framework (Flask). In this website there are login page , home page , about page , dashboard page , edit page and contact page. It is used to see the posts and to read the articles. Admin  control the posts by apply some basic function like Add , Delete , Edit posts and we can also upload the files by file uploader option.
 
+### Technologies used:
+---> Python Flask: a lightweight web framework for Python
+---> Pycharm IDE: an integrated development environment for Python
+---> Xampp Server: a cross-platform web server solution that includes Apache, MySQL, PHP, and Perl
+### Features of the website:
+---> Login page: allows administrators to log in to the website using their credentials
+---> Admin panel: a form that enables administrators to add, edit, and delete posts on the website
+---> Add post: allows administrators to create new posts with a title, content, and possibly other metadata
+---> Edit post: allows administrators to update the content, title, or other details of an existing post
+---> Delete post: allows administrators to remove a post from the website entirely
+#### Overall, it seems like the website is a content management system that allows authorized users to manage the posts on the site. The technologies used, Python Flask and Xampp Server, provide the necessary infrastructure for building and deploying web applications, while the Pycharm IDE likely made development and testing of the code more streamlined.
+
 # Log-in Page
 ![login_page](https://user-images.githubusercontent.com/82877515/176126751-2a4006fe-9e42-4c01-99b0-c531a96ae1c7.png)
 
